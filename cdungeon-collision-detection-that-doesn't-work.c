@@ -1,5 +1,12 @@
 
 
+  // Player block x, player block y
+  int pbx = (player.x / blocksize);
+  int pby = (player.y / blocksize);
+
+  // Player block actual x, player block actual y
+  int pbax = pbx * blocksize, pbay = pby * blocksize;
+
   // Collisions to do if the player is perfectly on the block
   if (pbax == player.x && pbay == player.y) {
 		char block = getblock(pbx, pby);
